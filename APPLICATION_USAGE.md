@@ -1,4 +1,5 @@
-# After cloning the git repo:
+# Instructions to run this repo:
+## After cloning the git repo:
 run ```npm i node-modules```
 -- that installs the packages required to run the application
 
