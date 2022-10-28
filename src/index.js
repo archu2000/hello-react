@@ -1,17 +1,11 @@
 import React from 'react';
+//inorder to render react element into the reactDOM
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+var element = <h1>Hello People!</h1>
+//element = Hello World!
+// document.getElementByID("root") will select element that renders
+//inoder to select the element by ID, use root since already predefined in index.html
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(element);
+// root.render(<h1>Welcome to my React App!</h1>)  //either hard-code or call the value
